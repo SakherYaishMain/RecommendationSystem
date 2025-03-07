@@ -1,0 +1,19 @@
+{
+    "production": {
+        "app_function": "recommendation_service.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "recommender",
+        "runtime": "python3.12",
+        "s3_bucket": "recommendationbucketlinesprinting",
+        "memory_size": 128,
+        "timeout_seconds": 30,
+        "slim_handler": false,
+        "exclude": [
+            "dateutil",
+            "botocore",
+            "s3transfer",
+            "concurrent"
+        ]
+    }
+}
